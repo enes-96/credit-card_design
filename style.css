@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1620121684840-edffcfc4b878?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: bolder;
+}
+.card {
+  width: 560px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 26px;
+  transition: 0.8s all;
+}
+.card:hover {
+  rotate: 45deg;
+  scale: 1.08;
+}
+.mastercard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+.chip-num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.num {
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+.chip {
+  stroke: #fff;
+  height: 74px;
+  width: 74px;
+  margin-right: 32px;
+}
+
+.expiry-title {
+  padding-bottom: 6px;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-weight: normal;
+  font-size: 22px;
+  font-family: monospace;
+}
+.name-payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  font-size: 28px;
+}
+.payment {
+  height: 66px;
+  margin-right: 32px;
+}
